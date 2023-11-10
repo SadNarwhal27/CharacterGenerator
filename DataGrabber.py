@@ -27,7 +27,7 @@ class DataGrabber():
                 return fit
         return fit
 
-    def filter_data(self, data_filters, unfiltered_data):
+    def filter_data(self, unfiltered_data, data_filters):
         """Creates a filtered data set"""
         filtered_data = []
         for row in unfiltered_data:
@@ -43,6 +43,12 @@ class DataGrabber():
         pick = random.choice(data_to_pick_from)
         return pick
 
+    def open_json(self, json_name):
+        """Opens a json file and returns its data"""
+        with open(json_name, 'r', encoding='utf-8') as file:
+            json_data = json.load(file)
+        return json_data
+
     def save_to_json(self, dict_data):
         """Converts a dictionary to a json file"""
         return json.dumps(dict_data, indent=4)
@@ -50,5 +56,5 @@ class DataGrabber():
 if __name__ == '__main__':
     gen = DataGrabber()
     filters = {'race':'human','gender':'female'}
-    data = gen.filter_data(filters, gen.read_data_from_csv('character_names.csv'))
+    data = gen.filter_data(gen.read_data_from_csv('character_names.csv'), filters)
     print(gen.save_to_json(gen.pick_something(data)))

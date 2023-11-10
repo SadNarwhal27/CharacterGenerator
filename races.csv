@@ -1,4 +1,4 @@
-race
-human
-Dwarf
-Elf
+race,languages,speed
+human,common,30
+dwarf,dwarven,25
+elf,elven,30
