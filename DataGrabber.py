@@ -10,7 +10,7 @@ class DataGrabber():
     def read_data_from_csv(self, csv_file):
         """Reads in data from a csv file"""
         csv_data = []
-        with open(csv_file, newline='', encoding='utf-8') as file:
+        with open(f'CSVs/{csv_file}', newline='', encoding='utf-8') as file:
             reader = csv.DictReader(file)
             for row in reader:
                 csv_data.append(row)
