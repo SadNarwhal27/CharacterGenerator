@@ -1,6 +1,8 @@
 from DataGrabber import DataGrabber
 from CardAssistant import CardAssistant
 
+# Might be useful to use the requests module to turn this into an API call
+
 class CardTemplates():
     def __init__(self):
         self.grabber = DataGrabber()
