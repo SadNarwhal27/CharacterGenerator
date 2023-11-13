@@ -1,14 +1,13 @@
 from DataGrabber import DataGrabber
 from CardAssistant import CardAssistant
 
-# Might be useful to use the requests module to turn this into an API call
-
 class CardTemplates():
     def __init__(self):
         self.grabber = DataGrabber()
         self.card_assistant = CardAssistant()
     
     def create_NPC(self, data_filters=None):
+        """Creates an npc card with or without using filters and outputs a json file"""
         if data_filters:
             if 'race' in data_filters.keys():
                 picked_race = self.grabber.filter_data(self.card_assistant.race_data, {'race':data_filters['race']})
