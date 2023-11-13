@@ -1,1 +1,1 @@
-web: gunicorn card-creator.wsgi
+web: gunicorn app:app
