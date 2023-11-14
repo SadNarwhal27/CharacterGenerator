@@ -34,9 +34,17 @@ class DataGrabber():
             if self.check_data(data_filters, row):
                 filtered_data.append(row)
         if not filtered_data:
-            print('Empty')
             return None
         return filtered_data
+    
+    def get_row(self, gettable_data, data_filter: dict):
+        """Pulls a row of data based on a filter value"""
+        print(data_filter.keys())
+        key_to_check = list(data_filter.keys())[0]
+        for row in gettable_data:
+            if row[key_to_check] == data_filter[key_to_check]:
+                return row
+        return None
     
     def pick_something(self, data_to_pick_from):
         """Uses the random.choice function to get a line of data"""

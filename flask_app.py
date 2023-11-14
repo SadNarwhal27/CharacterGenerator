@@ -1,12 +1,13 @@
 from CardBuilder import CardTemplates
-from flask import Flask
+from flask import Flask, request
 import os
 
 app = Flask(__name__)
 
 @app.get('/npc')
 def get_npc():
-    card = CardTemplates().create_NPC()
+    data_filters = dict(request.args) # Turns url arguments into filter dictionary
+    card = CardTemplates().create_NPC(data_filters)
     return card
 
 if __name__ == '__main__':

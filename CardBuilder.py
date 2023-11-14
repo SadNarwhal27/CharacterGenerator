@@ -8,20 +8,22 @@ class CardTemplates():
     
     def create_NPC(self, data_filters=None):
         """Creates an npc card with or without using filters and outputs a json file"""
+        data_filters = self.card_assistant.data_filter_checker(data_filters)
+
         if data_filters:
             if 'race' in data_filters.keys():
-                picked_race = self.grabber.filter_data(self.card_assistant.race_data, {'race':data_filters['race']})
+                picked_race = self.grabber.get_row(self.card_assistant.race_data, {'race': data_filters['race']})
             else:
                 picked_race = self.grabber.pick_something(self.card_assistant.race_data)
                 data_filters['race'] = picked_race['race']
 
             filtered_name_data = self.grabber.filter_data(self.card_assistant.name_data, data_filters)
-            card = self.grabber.pick_something(filtered_name_data)
+            card = dict(self.grabber.pick_something(filtered_name_data))
             card.update(picked_race)
         else:
             picked_name = self.grabber.pick_something(self.card_assistant.name_data)
             picked_race = self.grabber.filter_data(self.card_assistant.race_data, {'race':picked_name['race']})[0]
-            card = picked_name
+            card = dict(picked_name)
             card.update(picked_race)
         
         occupation = self.grabber.pick_something(self.grabber.read_data_from_csv('occupations.csv'))
@@ -40,4 +42,4 @@ class CardTemplates():
     
 if __name__ == '__main__':
     templates = CardTemplates()
-    print(templates.create_NPC())
+    print(templates.create_NPC({'race': 'dwarf', 'gender': 'male'}))

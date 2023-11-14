@@ -10,6 +10,7 @@ class CardAssistant():
         self.weapon_data = self.grabber.read_data_from_csv('weapons.csv')
         self.race_data = self.grabber.read_data_from_csv('races.csv')
         self.name_data = self.grabber.read_data_from_csv('character_names.csv')
+        self.data_filter_keys = ['race', 'gender']
 
     def roll_dice(self, qty, sides, modifier=0):
         """Simulates rolling dice"""
@@ -75,10 +76,41 @@ class CardAssistant():
         return {'actions': action}
     
     def generate_passive_perception(self, wisdom, proficiency=0):
+        """Creates the passive perception for a card"""
         passive = 10 + wisdom + proficiency
         return passive
+    
+    def data_filter_checker(self, data_filters):
+        """Checks validity of provided data filters"""
+        temp_filters = {}
+        for i in data_filters.keys():
+            if i in self.data_filter_keys: # Needs to be abstracted later
+                temp_filters.update({i: data_filters[i]})
+        data_filters = temp_filters
+
+        if 'race' in data_filters.keys():
+            try:
+                if not self.grabber.filter_data(self.race_data, {'race':data_filters['race']}):
+                    data_filters.pop('race')
+            except:
+                print('race popped')
+                data_filters.pop('race')
+
+        if 'gender' in data_filters.keys():
+            try:
+                if not self.grabber.filter_data(self.name_data, data_filters):
+                    data_filters.pop('gender')
+            except:
+                data_filters.pop('gender')
+        
+        if not data_filters:
+            return None
+        else:
+            return data_filters
+        
 
 if __name__ == '__main__':
     creator = CardAssistant()
     # filters = {'gender':'female'}
-    print(creator.create_npc_card())
+    # print(creator.data_filter_checker({'race': 'dragon', 'gender': 'nope', 'test':'test'}))
+    print(creator.data_filter_checker({'race': '', 'gender': ''}))
