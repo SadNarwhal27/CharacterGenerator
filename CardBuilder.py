@@ -18,7 +18,7 @@ class CardTemplates():
         card.update(self.card_assistant.generate_ac(10, card['modifiers']['DEX_MOD']))
         card.update(self.card_assistant.generate_hp(1, 8, card['modifiers']['CON_MOD']))
         card.update(self.card_assistant.choose_weapon(card['modifiers']))
-        card['senses'] += f' {self.card_assistant.generate_passive_perception(card['modifiers']['WIS_MOD'])}'
+        card['senses'] += f" {self.card_assistant.generate_passive_perception(card['modifiers']['WIS_MOD'])}"
 
         # return card
         return self.grabber.save_to_json(card)
