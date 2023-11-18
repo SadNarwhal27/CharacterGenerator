@@ -1,4 +1,4 @@
-import json, csv, random, os
+import json, os
 import psycopg2
 from dotenv import load_dotenv
 
@@ -7,13 +7,7 @@ class DataGrabber():
     def __init__(self):
         load_dotenv()
 
-        self.db_connection = psycopg2.connect(
-            host=os.getenv('DB_HOSTNAME'),
-            dbname=os.getenv('DB_NAME'),
-            user=os.getenv('DB_USER'),
-            password=os.getenv('DB_PASSWORD'),
-            port=os.getenv('DB_PORT')
-        )
+        self.db_connection = psycopg2.connect(os.getenv('DATABASE_URL'), sslmode='require')
         self.cursor = self.db_connection.cursor()
 
     def get_data(self, table_name, data_filters=None) -> dict:
