@@ -1,7 +1,0 @@
-name,type,damage,damage_type,range
-Dagger,Simple Melee Weapon,1d4,Piercing,20/60
-Shortsword,Simple Melee Weapon,1d6,Piercing,Melee
-Club,Simple Melee Weapon,1d4,Bludgeoning,Melee
-Handaxe,Simple Melee Weapon,1d6,Slashing,20/60
-Light Crossbow,Simple Ranged Weapon,1d8,Piercing,80/320
-Sling,Simple Ranged Weapon,1d4,Bludgeoning,30/120
