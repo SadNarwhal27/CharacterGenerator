@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Character Created{% endblock %}
+{% block content %}
+<br></br>
+<div class="container text-center justify-content-center p-3" style="background-color: white;">
+    <h1>{{ response.first_name }}</h1>
+    <p class="text-capitalize"><em>{{ response.gender }} {{ response.race }} {{ response.occupation }}, any alignment</em></p>
+    <hr class="border border-5 opacity-75">
+    <table class="table table-sm table-borderless">
+        <tr>
+            <td colspan="2"><b>Armor Class</b> {{ response.ac }}</td>
+            <td colspan="2"><b>Hit Points</b> {{ response.hp }}</td>
+            <td colspan="2"><b>Speed</b> {{ response.speed }} ft.</td>
+        </tr>
+    </table>
+    <hr class="border border-5 opacity-75">
+    <table class="table table-sm table-borderless">
+        <tr>
+            <td><table class="table table-borderless mb-0">
+                <tr><td><b>STR</b></td></tr>
+                <tr><td>{{ response.stats.STR }} ({{ response.modifiers.STR_MOD}})</td></tr>
+            </table></td>
+            <td><table class="table table-borderless mb-0">
+                <tr><td><b>DEX</b></td></tr>
+                <tr><td>{{ response.stats.DEX }} ({{ response.modifiers.DEX_MOD}})</td></tr>
+            </table></td>
+            <td><table class="table table-borderless mb-0">
+                <tr><td><b>CON</b></td></tr>
+                <tr><td>{{ response.stats.CON }} ({{ response.modifiers.CON_MOD}})</td></tr>
+            </table></td>
+            <td><table class="table table-borderless mb-0">
+                <tr><td><b>INT</b></td></tr>
+                <tr><td>{{ response.stats.INT }} ({{ response.modifiers.INT_MOD}})</td></tr>
+            </table></td>
+            <td><table class="table table-borderless mb-0">
+                <tr><td><b>WIS</b></td></tr>
+                <tr><td>{{ response.stats.WIS }} ({{ response.modifiers.WIS_MOD}})</td></tr>
+            </table></td>
+            <td><table class="table table-borderless mb-0">
+                <tr><td><b>CHA</b></td></tr>
+                <tr><td>{{ response.stats.CHA }} ({{ response.modifiers.CHA_MOD}})</td></tr>
+            </table></td>
+        </tr>
+    </table>
+    <hr class="border border-5 opacity-75">
+
+    <h3>Actions</h3>
+    <hr>
+    {% set weapon_name = response.actions|first %}
+    <p><b>{{ weapon_name }}</b> <i>{{ response.actions[weapon_name].type }}:</i> {{ response.actions[weapon_name] }} to hit, {{ response.actions[weapon_name].range }}, {{ response.actions[weapon_name].damage }} {{ response.actions[weapon_name].damage_type }}</p>
+</div>
+{% endblock %}

@@ -62,6 +62,11 @@ class CardAssistant():
             bonus = modifiers['STR_MOD']
         else:
             bonus = modifiers['DEX_MOD']
+
+        hit_modifier = 2 + bonus
+        if hit_modifier > 0:
+            hit_modifier = f'+{hit_modifier}'
+        weapon['hit_modifier'] = hit_modifier
         
         if bonus != 0:
             if bonus > 0:
@@ -108,4 +113,4 @@ if __name__ == '__main__':
     creator = CardAssistant()
     # filters = {'gender':'female'}
     # print(creator.data_filter_checker({'race': 'dragon', 'gender': 'nope', 'test':'test'}))
-    print(creator.data_filter_checker({'race': 'human', 'gender': 'male'}))
+    creator.choose_weapon(creator.generate_stats(-2, 2)['modifiers'])

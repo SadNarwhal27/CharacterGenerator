@@ -1,14 +1,20 @@
-from CardBuilder import CardTemplates
-from flask import Flask, request
+from flask import Flask, request, render_template
+import requests
 import os
 
 app = Flask(__name__)
 
-@app.get('/npc')
-def get_npc():
-    data_filters = dict(request.args) # Turns url arguments into filter dictionary
-    card = CardTemplates().create_NPC(data_filters)
-    return card
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/npc', methods=['GET','POST'])
+def create_npc():
+    race = request.form.get('race')
+    gender = request.form.get('gender')
+    response = requests.get(os.getenv('API_URL') + f"/npc?race={race}&gender={gender}")
+
+    return render_template('npc_created.html', response=response.json())
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
