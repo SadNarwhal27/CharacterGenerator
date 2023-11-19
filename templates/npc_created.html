@@ -2,51 +2,97 @@
 {% block title %}Character Created{% endblock %}
 {% block content %}
 <br></br>
-<div class="container text-center justify-content-center p-3" style="background-color: white;">
-    <h1>{{ response.first_name }}</h1>
-    <p class="text-capitalize"><em>{{ response.gender }} {{ response.race }} {{ response.occupation }}, any alignment</em></p>
+<div class="container rounded text-center justify-content-center p-3" style="background-color: white;">
+    <h1 style="color: #540B0E;">{{ response.first_name }}</h1>
+    <p class="text-capitalize"><em>{{ response.gender }} {{ response.race }} {{ response.occupation }}</em></p>
     <hr class="border border-5 opacity-75">
     <table class="table table-sm table-borderless">
         <tr>
-            <td colspan="2"><b>Armor Class</b> {{ response.ac }}</td>
-            <td colspan="2"><b>Hit Points</b> {{ response.hp }}</td>
-            <td colspan="2"><b>Speed</b> {{ response.speed }} ft.</td>
+            <td colspan="2"><b style="color: #9E2A2B;">Armor Class</b> {{ response.ac }}</td>
+            <td colspan="2"><b style="color: #9E2A2B;">Hit Points</b> {{ response.hp }}</td>
+            <td colspan="2"><b style="color: #9E2A2B;">Speed</b> {{ response.speed }} ft.</td>
         </tr>
     </table>
+
     <hr class="border border-5 opacity-75">
     <table class="table table-sm table-borderless">
         <tr>
             <td><table class="table table-borderless mb-0">
-                <tr><td><b>STR</b></td></tr>
+                <tr><td><b style="color: #9E2A2B;">STR</b></td></tr>
                 <tr><td>{{ response.stats.STR }} ({{ response.modifiers.STR_MOD}})</td></tr>
             </table></td>
             <td><table class="table table-borderless mb-0">
-                <tr><td><b>DEX</b></td></tr>
+                <tr><td><b style="color: #9E2A2B;">DEX</b></td></tr>
                 <tr><td>{{ response.stats.DEX }} ({{ response.modifiers.DEX_MOD}})</td></tr>
             </table></td>
             <td><table class="table table-borderless mb-0">
-                <tr><td><b>CON</b></td></tr>
+                <tr><td><b style="color: #9E2A2B;">CON</b></td></tr>
                 <tr><td>{{ response.stats.CON }} ({{ response.modifiers.CON_MOD}})</td></tr>
             </table></td>
             <td><table class="table table-borderless mb-0">
-                <tr><td><b>INT</b></td></tr>
+                <tr><td><b style="color: #9E2A2B;">INT</b></td></tr>
                 <tr><td>{{ response.stats.INT }} ({{ response.modifiers.INT_MOD}})</td></tr>
             </table></td>
             <td><table class="table table-borderless mb-0">
-                <tr><td><b>WIS</b></td></tr>
+                <tr><td><b style="color: #9E2A2B;">WIS</b></td></tr>
                 <tr><td>{{ response.stats.WIS }} ({{ response.modifiers.WIS_MOD}})</td></tr>
             </table></td>
             <td><table class="table table-borderless mb-0">
-                <tr><td><b>CHA</b></td></tr>
+                <tr><td><b style="color: #9E2A2B;">CHA</b></td></tr>
                 <tr><td>{{ response.stats.CHA }} ({{ response.modifiers.CHA_MOD}})</td></tr>
             </table></td>
         </tr>
     </table>
+    
     <hr class="border border-5 opacity-75">
+    <table class="table table-sm table-borderless">
+        <tr>
+            <!-- Skills coming soon -->
+            <td colspan="2"><b style="color: #9E2A2B;">Senses</b> {{ response.senses }}</td>
+            <td colspan="2"><b style="color: #9E2A2B;">Languages</b> {{ response.language }}</td>
+        </tr>
+    </table>
 
-    <h3>Actions</h3>
+    <hr class="border border-5 opacity-75">
+    <h3 style="color: #540B0E;">Actions</h3>
     <hr>
     {% set weapon_name = response.actions|first %}
-    <p><b>{{ weapon_name }}</b> <i>{{ response.actions[weapon_name].type }}:</i> {{ response.actions[weapon_name] }} to hit, {{ response.actions[weapon_name].range }}, {{ response.actions[weapon_name].damage }} {{ response.actions[weapon_name].damage_type }}</p>
+    <p><b>{{ weapon_name }}</b> <i>{{ response.actions[weapon_name].type }}:</i> {{ response.actions[weapon_name].hit_modifier }} to hit, {{ response.actions[weapon_name].range }} range, {{ response.actions[weapon_name].damage }} {{ response.actions[weapon_name].damage_type }} damage,</p>
+    <!-- Life story coming soon -->
+</div>
+<div class="container">
+    <br>
+    <table class="table table-borderless">
+        <tr>
+            <td><button onclick="window.location.reload(false)" class="btn" style="background-color: #E09F3E;">Refresh Page</button></td>
+            <form class="form" action="/npc" method="post">
+                <td>
+                    <div class="form-floating">
+                        <label for="race" class="form-label">Character Race:</label>
+                        <select class="form-select" name="race" aria-label="Floating label select example">
+                            <option selected value="">Select race</option>
+                            <option value="human">Human</option>
+                            <option value="dwarf">Dwarf</option>
+                            <option value="elf">Elf</option>
+                        </select>
+                    </div>
+                </td>
+                
+                <td>
+                    <div class="form-floating">
+                        <label for="gender" class="form-label">Character Gender:</label>
+                        <select class="form-select" name="gender" aria-label="Floating label select example">
+                            <option selected value="">Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="">Any</option>
+                        </select>
+                    </div>
+                </td>
+                
+                <td><button type="submit" class="btn" style="background-color: #E09F3E;">Create Character</button></td>
+            </form>
+        </tr>
+    </table>
 </div>
 {% endblock %}
