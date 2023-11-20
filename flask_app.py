@@ -12,7 +12,13 @@ def index():
 def create_npc():
     race = request.form.get('race')
     gender = request.form.get('gender')
-    response = requests.get(os.getenv('API_URL') + f"/npc?race={race}&gender={gender}")
+    backstory = request.form.get('backstory')
+
+    # Production
+    response = requests.get(os.getenv('API_URL') + f"/npc?race={race}&gender={gender}&backstory={backstory}")
+
+    # For testing
+    # response = requests.get('http://127.0.0.1:5001/' + f"/npc?race={race}&gender={gender}&backstory={backstory}")
 
     return render_template('npc_created.html', response=response.json())
 

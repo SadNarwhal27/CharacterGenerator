@@ -7,6 +7,15 @@ class CardAssistant():
     def __init__(self):
         self.grabber = DataGrabber()
         self.base_stats = {"STR": 0,"DEX": 0,"CON": 0,"INT": 0,"WIS": 0,"CHA": 0}
+        self.alignments = {
+            3: ['Chaotic Evil', 'Chaotic Neutral'],
+            5: ['Lawful Evil'],
+            8: ['Neutral Evil'],
+            12: ['Neutral'],
+            15: ['Neutral Good'],
+            17: ['Lawful Good', 'Lawful Neutral'],
+            18: ['Chaotic Good', 'Chaotic Neutral']
+            }
 
     def roll_dice(self, qty, sides, modifier=0):
         """Simulates rolling dice"""
@@ -14,7 +23,7 @@ class CardAssistant():
         for _ in range(qty):
             roll = random.randint(1, sides)
             rolls.append(roll)
-        if len(rolls) > 1:
+        if len(rolls) == 1:
             total = rolls[0]
         else:
             total = 0
@@ -55,7 +64,7 @@ class CardAssistant():
         return {'ac': ac}
     
     def choose_weapon(self, modifiers):
-        """Chooses a weapon from the weapons file"""
+        """Chooses a weapon and splits up the data into a usable form"""
         weapon = self.grabber.get_data('weapons')
 
         if 'Melee' in weapon['type']:
@@ -81,9 +90,22 @@ class CardAssistant():
         passive = 10 + wisdom + proficiency
         return passive
     
+    def get_alignment(self):
+        """Chooses an alignment based on dice rolls"""
+        alignment_roll = self.roll_dice(3, 6)
+
+        for i in self.alignments.keys():
+            if alignment_roll <= i:
+                alignment = random.choice(self.alignments[i])
+                return alignment
+
+    
     def data_filter_checker(self, data_filters):
         """Checks validity of provided data filters"""
-        DATA_FILTER_KEYS = ['race', 'gender']
+        if not data_filters:
+            return None
+        
+        DATA_FILTER_KEYS = ['race', 'gender', 'backstory']
         temp_filters = {}
         for i in data_filters.keys():
             if i in DATA_FILTER_KEYS: # Needs to be abstracted later
@@ -104,13 +126,13 @@ class CardAssistant():
             except:
                 data_filters.pop('gender')
         
-        if not data_filters:
-            return None
-        else:
-            return data_filters
+        if 'backstory' in data_filters.keys():
+            if data_filters['backstory'] == 'None':
+                data_filters['backstory'] = None
+        
+        return data_filters
 
 if __name__ == '__main__':
     creator = CardAssistant()
     # filters = {'gender':'female'}
     # print(creator.data_filter_checker({'race': 'dragon', 'gender': 'nope', 'test':'test'}))
-    creator.choose_weapon(creator.generate_stats(-2, 2)['modifiers'])

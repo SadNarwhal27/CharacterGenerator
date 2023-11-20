@@ -2,9 +2,14 @@
 {% block title %}Character Created{% endblock %}
 {% block content %}
 <br></br>
+<!-- NPC Card -->
 <div class="container rounded text-center justify-content-center p-3" style="background-color: white;">
+
+    <!-- Name data -->
     <h1 style="color: #540B0E;">{{ response.first_name }}</h1>
-    <p class="text-capitalize"><em>{{ response.gender }} {{ response.race }} {{ response.occupation }}</em></p>
+    <p class="text-capitalize"><em>{{ response.gender }} {{ response.race }} {{ response.occupation }}, {{ response.alignment }}</em></p>
+    
+    <!-- Attributes -->
     <hr class="border border-5 opacity-75">
     <table class="table table-sm table-borderless">
         <tr>
@@ -14,6 +19,7 @@
         </tr>
     </table>
 
+    <!-- Stats and modifiers -->
     <hr class="border border-5 opacity-75">
     <table class="table table-sm table-borderless">
         <tr>
@@ -44,6 +50,7 @@
         </tr>
     </table>
     
+    <!-- Features -->
     <hr class="border border-5 opacity-75">
     <table class="table table-sm table-borderless">
         <tr>
@@ -53,13 +60,22 @@
         </tr>
     </table>
 
+    <!-- Actions and weapons -->
     <hr class="border border-5 opacity-75">
     <h3 style="color: #540B0E;">Actions</h3>
     <hr>
     {% set weapon_name = response.actions|first %}
     <p><b>{{ weapon_name }}</b> <i>{{ response.actions[weapon_name].type }}:</i> {{ response.actions[weapon_name].hit_modifier }} to hit, {{ response.actions[weapon_name].range }} range, {{ response.actions[weapon_name].damage }} {{ response.actions[weapon_name].damage_type }} damage,</p>
-    <!-- Life story coming soon -->
+    
+    <!-- Backstory -->
+    {% if response.backstory %}
+        <hr class="border border-5 opacity-75">
+        <h3 style="color: #540B0E;">Backstory</h3>
+        <p>{{ response.backstory }}</p>
+    {% endif %}
 </div>
+
+<!-- Generate Card Forms -->
 <div class="container">
     <br>
     <table class="table table-borderless">
@@ -68,9 +84,9 @@
             <form class="form" action="/npc" method="post">
                 <td>
                     <div class="form-floating">
-                        <label for="race" class="form-label">Character Race:</label>
-                        <select class="form-select" name="race" aria-label="Floating label select example">
-                            <option selected value="">Select race</option>
+                        <label for="race_select" class="form-label">Character Race:</label>
+                        <select class="form-select" name="race" id="race_select">
+                            <option selected value="">Any</option>
                             <option value="human">Human</option>
                             <option value="dwarf">Dwarf</option>
                             <option value="elf">Elf</option>
@@ -80,13 +96,19 @@
                 
                 <td>
                     <div class="form-floating">
-                        <label for="gender" class="form-label">Character Gender:</label>
-                        <select class="form-select" name="gender" aria-label="Floating label select example">
-                            <option selected value="">Select gender</option>
+                        <label for="gender_select" class="form-label">Character Gender:</label>
+                        <select class="form-select" name="gender" id="gender_select">
+                            <option selected value="">Any</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
-                            <option value="">Any</option>
                         </select>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="True" name="backstory" id="create_backstory">
+                        <label class="form-check-label" for="create_backstory">Include Backstory?</label>
                     </div>
                 </td>
                 
