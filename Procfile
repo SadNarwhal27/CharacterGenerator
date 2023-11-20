@@ -1,2 +1,1 @@
-web: gunicorn rest_api:app;
-web: gunicorn flask_app:app
+web: gunicorn rest_api:app
