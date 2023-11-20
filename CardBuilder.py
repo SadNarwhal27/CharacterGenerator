@@ -11,7 +11,11 @@ class CardTemplates():
     
     def create_NPC(self, data_filters=None):
         data_filters = self.card_assistant.data_filter_checker(data_filters)
-        create_backstory = data_filters.pop('backstory')
+        
+        if data_filters:
+            create_backstory = data_filters.pop('backstory')
+        else:
+            create_backstory = None
 
         card = dict(self.grabber.get_data('character_first_names', data_filters))
         card.update(self.grabber.get_data('races', {'race': card['race']}))

@@ -129,6 +129,8 @@ class CardAssistant():
         if 'backstory' in data_filters.keys():
             if data_filters['backstory'] == 'None':
                 data_filters['backstory'] = None
+        else:
+            data_filters['backstory'] = None
         
         return data_filters
 
