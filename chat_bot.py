@@ -19,3 +19,8 @@ class StoryTeller():
         )
 
         return completion.choices[0].message.content
+
+if __name__ == '__main__':
+    from CardBuilder import CardTemplates
+    card = CardTemplates().create_NPC()
+    print(StoryTeller().generate_backstory(card))

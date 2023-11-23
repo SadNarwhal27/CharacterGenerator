@@ -23,7 +23,11 @@ class CardTemplates():
         card.update(self.grabber.get_data('occupations'))
         card.update(self.card_assistant.generate_stats(-2, 2))
         card.update(self.card_assistant.generate_ac(10, card['modifiers']['DEX_MOD']))
+
         card.update(self.card_assistant.generate_hp(1, 8, card['modifiers']['CON_MOD']))
+        if card['hp'] < 4:
+            card['hp'] = 4
+
         card.update(self.card_assistant.choose_weapon(card['modifiers']))
         card['senses'] += f" {self.card_assistant.generate_passive_perception(card['modifiers']['WIS_MOD'])}"
 
