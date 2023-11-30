@@ -16,13 +16,35 @@ class CardAssistant():
             17: ['Lawful Good', 'Lawful Neutral'],
             18: ['Chaotic Good', 'Chaotic Neutral']
             }
+        self.skills = {
+            'Athletics': 'STR_MOD',
+            'Acrobatics': 'DEX_MOD',
+            'Sleight of Hand': 'DEX_MOD',
+            'Stealth': 'DEX_MOD',
+            'Arcana': 'INT_MOD',
+            'History': 'INT_MOD',
+            'Investigation': 'INT_MOD',
+            'Nature': 'INT_MOD',
+            'Religion': 'INT_MOD',
+            'Animal Handling': 'WIS_MOD',
+            'Insight': 'WIS_MOD',
+            'Medicine': 'WIS_MOD',
+            'Perception': 'WIS_MOD',
+            'Survival': 'WIS_MOD',
+            'Deception': 'CHA_MOD',
+            'Intimidation': 'CHA_MOD',
+            'Performance': 'CHA_MOD',
+            'Persuasion': 'CHA_MOD',
+        }
 
-    def roll_dice(self, qty, sides, modifier=0):
+    def roll_dice(self, qty:int, sides:int, modifier=0):
         """Simulates rolling dice"""
         rolls = []
         for _ in range(qty):
             roll = random.randint(1, sides)
             rolls.append(roll)
+        
+        # Outputs the single roll or adds the results together
         if len(rolls) == 1:
             total = rolls[0]
         else:
@@ -33,9 +55,13 @@ class CardAssistant():
         total += modifier
         return total
     
-    def generate_stats(self, minus, plus):
+    def generate_stats(self, minus:int, plus:int):
         """Generates 6 stats and their modifiers"""
+
+        # So the initial copy is not tampered with
         stats = copy.deepcopy(self.base_stats)
+
+        # Calculates associated stats and modifiers
         modifiers = {}
         for key in stats.keys():
             stats[key] = 10 + random.randint(minus, plus)
@@ -47,7 +73,7 @@ class CardAssistant():
         stats_and_modifiers['modifiers'] = modifiers
         return stats_and_modifiers
     
-    def generate_hp(self, qty, sides, con_mod=0):
+    def generate_hp(self, qty:int, sides:int, con_mod=0):
         """Generates hp by rolling dice and adding modifiers to the total"""
         hp = self.roll_dice(qty, sides)
 
@@ -63,7 +89,7 @@ class CardAssistant():
         ac = base + dex_mod
         return {'ac': ac}
     
-    def choose_weapon(self, modifiers):
+    def choose_weapon(self, modifiers:dict):
         """Chooses a weapon and splits up the data into a usable form"""
         weapon = self.grabber.get_data('weapons')
 
@@ -85,7 +111,7 @@ class CardAssistant():
         action = {weapon.pop('weapon_name'): weapon}
         return {'actions': action}
     
-    def generate_passive_perception(self, wisdom, proficiency=0):
+    def generate_passive_perception(self, wisdom:int, proficiency=0):
         """Creates the passive perception for a card"""
         passive = 10 + wisdom + proficiency
         return passive
@@ -99,8 +125,22 @@ class CardAssistant():
                 alignment = random.choice(self.alignments[i])
                 return alignment
 
+    def generate_skills(self, raw_skills:str, modifiers:dict):
+        """Generates usable skills for the character"""
+        individual_skills = [i.lstrip() for i in raw_skills.split(',')]
+
+        modified_skills = ""
+        for skill in individual_skills:
+            mod = modifiers[self.skills[skill]] + 2
+            if mod > 0:
+                modified_skills += "+"
+
+            modified_skills += f"{mod} {skill}, "
+        
+        # The string slice removes the trailing ', ' from the modified_skills
+        return modified_skills[:-2]
     
-    def data_filter_checker(self, data_filters):
+    def data_filter_checker(self, data_filters:dict):
         """Checks validity of provided data filters"""
         if not data_filters:
             return None
@@ -138,3 +178,5 @@ if __name__ == '__main__':
     creator = CardAssistant()
     # filters = {'gender':'female'}
     # print(creator.data_filter_checker({'race': 'dragon', 'gender': 'nope', 'test':'test'}))
+    mods = { "STR_MOD": -1, "DEX_MOD": -1, "CON_MOD": -1, "INT_MOD": -1, "WIS_MOD": -1, "CHA_MOD": 0 }
+    print(creator.generate_skills("Perception, Deception, Sleight of Hand", mods))
