@@ -77,6 +77,13 @@ class CardTemplates():
         card['generated_description'] = self.story_teller.generate_item_description(card, int(data_filters['lod']))
 
         return card
+    
+    def create_spell(self, spells:dict, data_filters:dict=None):
+        if data_filters['spell'] != 'None':
+            card = spells[data_filters['spell']]
+        else:
+            card = spells
+        return card
 
 if __name__ == '__main__':
     templates = CardTemplates()

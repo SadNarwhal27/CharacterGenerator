@@ -98,10 +98,6 @@ def list_to_dict(spells):
 
         title = line[0].replace('title: ', '').replace('"', '').strip()
 
-        if '**Creature**' in line:
-            write_txt_file(line, title)
-            continue
-
         output[title] = {'spell_name': title}
 
         for part in line:
@@ -158,6 +154,9 @@ def list_to_dict(spells):
                 if key == "spell_classes":
                     temp.update({"spell_subclasses": None})
             output[title] = temp
+        
+        if 'spell_creature' not in output[title].keys():
+            output[title]['spell_creature'] = None
 
     return output
 
@@ -166,5 +165,5 @@ def create_json(spells:dict):
     with open('spells.json', 'w', encoding='utf-8') as file:
         json.dump(spells, file, indent=4)
 
-spells = get_spell_data()
+spells = get_spell_data("C:\\Users\\schal\\Downloads\\_posts")
 create_json(list_to_dict(spells))

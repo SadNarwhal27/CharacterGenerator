@@ -1,6 +1,6 @@
 from CardBuilder import CardTemplates
 from flask import Flask, request
-import os
+import os, json
 
 app = Flask(__name__)
 
@@ -15,6 +15,14 @@ def get_item():
     data_filters = dict(request.args)
     card = CardTemplates().create_item(data_filters)
     return card
+
+@app.get('/spells')
+def get_spells():
+    with open('JSONs/spells.json', 'r', encoding='utf-8') as file:
+        spells = json.load(file)
+    data_filters = dict(request.args)
+    spells = CardTemplates().create_spell(spells, data_filters)
+    return spells
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
