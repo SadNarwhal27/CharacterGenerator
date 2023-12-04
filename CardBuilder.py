@@ -79,10 +79,36 @@ class CardTemplates():
         return card
     
     def create_spell(self, spells:dict, data_filters:dict=None):
+        # try:
         if data_filters['spell'] != 'None':
             card = spells[data_filters['spell']]
+            return card
         else:
             card = spells
+        
+        if data_filters['class'] != 'None':
+            temp = {}
+            for spell in card:
+                if data_filters['class'] in spells[spell]['spell_classes']:
+                    temp[spell] = card[spell]
+            card = temp
+
+        if data_filters['level'] != 'None':
+            temp = {}
+            for spell in card:
+                try:
+                    if card[spell]['spell_level'] == data_filters['level']:
+                        temp[spell] = card[spell]
+                except:
+                    continue
+            card = temp
+            card['filter_level'] = data_filters['level']
+        
+        if data_filters['class'] != 'None':
+            card['filter_class'] = data_filters['class']
+        else:
+            card['filter_class'] = 'any'
+
         return card
 
 if __name__ == '__main__':
