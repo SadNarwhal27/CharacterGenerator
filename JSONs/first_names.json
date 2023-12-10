@@ -1,0 +1,567 @@
+{
+    "Alden": {
+        "first_name": "Alden",
+        "race": "human",
+        "gender": "male"
+    },
+    "Bran": {
+        "first_name": "Bran",
+        "race": "human",
+        "gender": "male"
+    },
+    "Caelum": {
+        "first_name": "Caelum",
+        "race": "human",
+        "gender": "male"
+    },
+    "Darian": {
+        "first_name": "Darian",
+        "race": "human",
+        "gender": "male"
+    },
+    "Eldric": {
+        "first_name": "Eldric",
+        "race": "human",
+        "gender": "male"
+    },
+    "Faelan": {
+        "first_name": "Faelan",
+        "race": "human",
+        "gender": "male"
+    },
+    "Gareth": {
+        "first_name": "Gareth",
+        "race": "human",
+        "gender": "male"
+    },
+    "Haldor": {
+        "first_name": "Haldor",
+        "race": "human",
+        "gender": "male"
+    },
+    "Ilian": {
+        "first_name": "Ilian",
+        "race": "human",
+        "gender": "male"
+    },
+    "Jorin": {
+        "first_name": "Jorin",
+        "race": "human",
+        "gender": "male"
+    },
+    "Kael": {
+        "first_name": "Kael",
+        "race": "human",
+        "gender": "male"
+    },
+    "Lorcan": {
+        "first_name": "Lorcan",
+        "race": "human",
+        "gender": "male"
+    },
+    "Maelis": {
+        "first_name": "Maelis",
+        "race": "human",
+        "gender": "male"
+    },
+    "Nolan": {
+        "first_name": "Nolan",
+        "race": "human",
+        "gender": "male"
+    },
+    "Orik": {
+        "first_name": "Orik",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Perrin": {
+        "first_name": "Perrin",
+        "race": "human",
+        "gender": "male"
+    },
+    "Quinlan": {
+        "first_name": "Quinlan",
+        "race": "human",
+        "gender": "male"
+    },
+    "Rael": {
+        "first_name": "Rael",
+        "race": "human",
+        "gender": "male"
+    },
+    "Soren": {
+        "first_name": "Soren",
+        "race": "human",
+        "gender": "male"
+    },
+    "Tavish": {
+        "first_name": "Tavish",
+        "race": "human",
+        "gender": "male"
+    },
+    "Uldric": {
+        "first_name": "Uldric",
+        "race": "human",
+        "gender": "male"
+    },
+    "Vaelen": {
+        "first_name": "Vaelen",
+        "race": "human",
+        "gender": "male"
+    },
+    "Waelor": {
+        "first_name": "Waelor",
+        "race": "human",
+        "gender": "male"
+    },
+    "Xander": {
+        "first_name": "Xander",
+        "race": "human",
+        "gender": "male"
+    },
+    "Yorin": {
+        "first_name": "Yorin",
+        "race": "human",
+        "gender": "male"
+    },
+    "Zaelan": {
+        "first_name": "Zaelan",
+        "race": "human",
+        "gender": "male"
+    },
+    "Aeliana": {
+        "first_name": "Aeliana",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Brielle": {
+        "first_name": "Brielle",
+        "race": "human",
+        "gender": "female"
+    },
+    "Callista": {
+        "first_name": "Callista",
+        "race": "human",
+        "gender": "female"
+    },
+    "Dahlia": {
+        "first_name": "Dahlia",
+        "race": "human",
+        "gender": "female"
+    },
+    "Elowen": {
+        "first_name": "Elowen",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Fiona": {
+        "first_name": "Fiona",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Genevieve": {
+        "first_name": "Genevieve",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Hazel": {
+        "first_name": "Hazel",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Isolde": {
+        "first_name": "Isolde",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Jocelyn": {
+        "first_name": "Jocelyn",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Kiera": {
+        "first_name": "Kiera",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Laelia": {
+        "first_name": "Laelia",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Mirelle": {
+        "first_name": "Mirelle",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Nerida": {
+        "first_name": "Nerida",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Oriana": {
+        "first_name": "Oriana",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Penelope": {
+        "first_name": "Penelope",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Quintessa": {
+        "first_name": "Quintessa",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Rhiannon": {
+        "first_name": "Rhiannon",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Seraphina": {
+        "first_name": "Seraphina",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Thalassa": {
+        "first_name": "Thalassa",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Ulyssa": {
+        "first_name": "Ulyssa",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Vivienne": {
+        "first_name": "Vivienne",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Willow": {
+        "first_name": "Willow",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Xanthe": {
+        "first_name": "Xanthe",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Ysolde": {
+        "first_name": "Ysolde",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Zephyra": {
+        "first_name": "Zephyra",
+        "race": "elf",
+        "gender": "female"
+    },
+    "Agnar": {
+        "first_name": "Agnar",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Baldor": {
+        "first_name": "Baldor",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Dain": {
+        "first_name": "Dain",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Fjorin": {
+        "first_name": "Fjorin",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Gimli": {
+        "first_name": "Gimli",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Hrothgar": {
+        "first_name": "Hrothgar",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Ilgar": {
+        "first_name": "Ilgar",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Kili": {
+        "first_name": "Kili",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Lofar": {
+        "first_name": "Lofar",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Mjorin": {
+        "first_name": "Mjorin",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Nori": {
+        "first_name": "Nori",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Rurik": {
+        "first_name": "Rurik",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Thorin": {
+        "first_name": "Thorin",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Ulfar": {
+        "first_name": "Ulfar",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Vali": {
+        "first_name": "Vali",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Vidar": {
+        "first_name": "Vidar",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Yngvar": {
+        "first_name": "Yngvar",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Zakar": {
+        "first_name": "Zakar",
+        "race": "dwarf",
+        "gender": "male"
+    },
+    "Astrid": {
+        "first_name": "Astrid",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Brynhild": {
+        "first_name": "Brynhild",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Dagny": {
+        "first_name": "Dagny",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Elin": {
+        "first_name": "Elin",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Frida": {
+        "first_name": "Frida",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Gerta": {
+        "first_name": "Gerta",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Helga": {
+        "first_name": "Helga",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Ingrid": {
+        "first_name": "Ingrid",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Jorunn": {
+        "first_name": "Jorunn",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Kelda": {
+        "first_name": "Kelda",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Lilja": {
+        "first_name": "Lilja",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Maren": {
+        "first_name": "Maren",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Nora": {
+        "first_name": "Nora",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Ornella": {
+        "first_name": "Ornella",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Pernilla": {
+        "first_name": "Pernilla",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Runa": {
+        "first_name": "Runa",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Sif": {
+        "first_name": "Sif",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Tindra": {
+        "first_name": "Tindra",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Vigdis": {
+        "first_name": "Vigdis",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Ylva": {
+        "first_name": "Ylva",
+        "race": "dwarf",
+        "gender": "female"
+    },
+    "Aelar": {
+        "first_name": "Aelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Caelar": {
+        "first_name": "Caelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Eldrin": {
+        "first_name": "Eldrin",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Faelar": {
+        "first_name": "Faelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Gaelar": {
+        "first_name": "Gaelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Ildrin": {
+        "first_name": "Ildrin",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Jaelar": {
+        "first_name": "Jaelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Kaelar": {
+        "first_name": "Kaelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Laelar": {
+        "first_name": "Laelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Maelar": {
+        "first_name": "Maelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Naelar": {
+        "first_name": "Naelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Ondrin": {
+        "first_name": "Ondrin",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Paelar": {
+        "first_name": "Paelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Quaelar": {
+        "first_name": "Quaelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Raelar": {
+        "first_name": "Raelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Saelar": {
+        "first_name": "Saelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Taelar": {
+        "first_name": "Taelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Uldrin": {
+        "first_name": "Uldrin",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Vaelar": {
+        "first_name": "Vaelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Waelar": {
+        "first_name": "Waelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Xaelar": {
+        "first_name": "Xaelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Yaelar": {
+        "first_name": "Yaelar",
+        "race": "elf",
+        "gender": "male"
+    },
+    "Zaelar": {
+        "first_name": "Zaelar",
+        "race": "elf",
+        "gender": "male"
+    }
+}

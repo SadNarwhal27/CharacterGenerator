@@ -18,10 +18,8 @@ def get_item():
 
 @app.get('/spells')
 def get_spells():
-    with open('JSONs/spells.json', 'r', encoding='utf-8') as file:
-        spells = json.load(file)
     data_filters = dict(request.args)
-    spells = CardTemplates().create_spell(spells, data_filters)
+    spells = CardTemplates().create_spell(data_filters)
     return spells
 
 if __name__ == '__main__':

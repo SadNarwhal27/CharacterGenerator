@@ -1,0 +1,44 @@
+{
+    "Dagger": {
+        "weapon_name": "Dagger",
+        "weapon_type": "Simple Melee Weapon",
+        "weapon_damage": "1d4",
+        "weapon_damage_type": "Piercing",
+        "weapon_range": "20/60"
+    },
+    "Shortsword": {
+        "weapon_name": "Shortsword",
+        "weapon_type": "Simple Melee Weapon",
+        "weapon_damage": "1d6",
+        "weapon_damage_type": "Piercing",
+        "weapon_range": "Melee"
+    },
+    "Club": {
+        "weapon_name": "Club",
+        "weapon_type": "Simple Melee Weapon",
+        "weapon_damage": "1d4",
+        "weapon_damage_type": "Bludgeoning",
+        "weapon_range": "Melee"
+    },
+    "Handaxe": {
+        "weapon_name": "Handaxe",
+        "weapon_type": "Simple Melee Weapon",
+        "weapon_damage": "1d6",
+        "weapon_damage_type": "Slashing",
+        "weapon_range": "20/60"
+    },
+    "Light Crossbow": {
+        "weapon_name": "Light Crossbow",
+        "weapon_type": "Simple Ranged Weapon",
+        "weapon_damage": "1d8",
+        "weapon_damage_type": "Piercing",
+        "weapon_range": "80/320"
+    },
+    "Sling": {
+        "weapon_name": "Sling",
+        "weapon_type": "Simple Ranged Weapon",
+        "weapon_damage": "1d4",
+        "weapon_damage_type": "Bludgeoning",
+        "weapon_range": "30/120"
+    }
+}

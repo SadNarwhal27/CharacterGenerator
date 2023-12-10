@@ -1,0 +1,20 @@
+{
+    "human": {
+        "race": "human",
+        "languages": "Common",
+        "speed": "30",
+        "senses": "passive Perception"
+    },
+    "dwarf": {
+        "race": "dwarf",
+        "languages": "Dwarven, Common",
+        "speed": "25",
+        "senses": "darkvision 60ft, passive Perception"
+    },
+    "elf": {
+        "race": "elf",
+        "languages": "Elven, Common",
+        "speed": "30",
+        "senses": "darkvision 60ft, passive Perception"
+    }
+}

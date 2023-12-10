@@ -22,12 +22,12 @@ class CardTemplates():
             create_backstory = None
 
         # Initializes the card and fills in data
-        card = dict(self.grabber.get_data('character_first_names', data_filters))
-        card.update(self.grabber.get_data('races', {'race': card['race']}))
+        card = dict(self.grabber.get_line('first_names', data_filters))
+        card.update(self.grabber.get_line('races', {'race': card['race']}))
 
         card.update(self.card_assistant.generate_stats(-2, 2))
 
-        card.update(self.grabber.get_data('occupations'))
+        card.update(self.grabber.get_line('occupations'))
         card['skills'] = self.card_assistant.generate_skills(card['skills'], card['modifiers'])
 
         card.update(self.card_assistant.generate_ac(10, card['modifiers']['DEX_MOD']))
@@ -53,9 +53,9 @@ class CardTemplates():
 
         # Filters treasure type if filter is given
         if data_filters['type'] and data_filters['type'] != 'None':
-            card = dict(self.grabber.get_data('treasure', {'treasure_type': data_filters['type']}))
+            card = dict(self.grabber.get_line('treasure', {'treasure_type': data_filters['type']}))
         else:
-            card = dict(self.grabber.get_data('treasure'))
+            card = dict(self.grabber.get_line('treasure'))
         
         # Adds the gold piece (GP) to each value
         card['value'] = str(card['value']) + 'GP'
@@ -78,38 +78,21 @@ class CardTemplates():
 
         return card
     
-    def create_spell(self, spells:dict, data_filters:dict=None):
-        # try:
-        if data_filters['spell'] != 'None':
-            card = spells[data_filters['spell']]
+    def create_spell(self, data_filters:dict=None):
+        spells = self.grabber.get_data('spells', data_filters)
+
+        if data_filters['spell_name'] != 'None':
+            card = spells[data_filters['spell_name']]
             return card
         else:
             card = spells
         
-        if data_filters['class'] != 'None':
-            temp = {}
-            for spell in card:
-                if data_filters['class'] in spells[spell]['spell_classes']:
-                    temp[spell] = card[spell]
-            card = temp
-
-        if data_filters['level'] != 'None':
-            temp = {}
-            for spell in card:
-                try:
-                    if card[spell]['spell_level'] == data_filters['level']:
-                        temp[spell] = card[spell]
-                except:
-                    continue
-            card = temp
-            card['filter_level'] = data_filters['level']
-        
-        if data_filters['class'] != 'None':
-            card['filter_class'] = data_filters['class']
+        if data_filters['spell_classes'] != 'None':
+            card['filter_class'] = data_filters['spell_classes']
         else:
             card['filter_class'] = 'any'
 
-        return card
+        return spells
 
 if __name__ == '__main__':
     templates = CardTemplates()

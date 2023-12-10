@@ -1,0 +1,653 @@
+{
+    "Azurite": {
+        "treasure_name": "Azurite",
+        "treasure_description": "Opaque mottled deep blue",
+        "treasure_options": "",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Banded agate": {
+        "treasure_name": "Banded agate",
+        "treasure_description": "Translucent striped <>",
+        "treasure_options": "brown,blue,white,red",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Blue quartz": {
+        "treasure_name": "Blue quartz",
+        "treasure_description": "Transparent pale blue",
+        "treasure_options": "",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Eye agate": {
+        "treasure_name": "Eye agate",
+        "treasure_description": "Translucent circles of <>",
+        "treasure_options": "grey,white,brown,blue,green",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Hematite": {
+        "treasure_name": "Hematite",
+        "treasure_description": "Opaque grey-black",
+        "treasure_options": "",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Lapis lazuli": {
+        "treasure_name": "Lapis lazuli",
+        "treasure_description": "opaque light and dark blue with yellow flecks",
+        "treasure_options": "",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Malachite": {
+        "treasure_name": "Malachite",
+        "treasure_description": "Opaque striated light and dark green",
+        "treasure_options": "",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Moss agate": {
+        "treasure_name": "Moss agate",
+        "treasure_description": "Translucent <> with <>",
+        "treasure_options": "pink,yellow-white|mossy gray,green markings",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Obsidian": {
+        "treasure_name": "Obsidian",
+        "treasure_description": "Opaque black",
+        "treasure_options": "",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Rhodochrosite": {
+        "treasure_name": "Rhodochrosite",
+        "treasure_description": "Opaque light pink",
+        "treasure_options": "",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Tiger eye": {
+        "treasure_name": "Tiger eye",
+        "treasure_description": "Translucent brown with golden center",
+        "treasure_options": "",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Turquoise": {
+        "treasure_name": "Turquoise",
+        "treasure_description": "Opaque light blue-green",
+        "treasure_options": "",
+        "value": "10",
+        "treasure_type": "gemstone"
+    },
+    "Bloodstone": {
+        "treasure_name": "Bloodstone",
+        "treasure_description": "Opaque dark grey with red flecks",
+        "treasure_options": "",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Carnelian": {
+        "treasure_name": "Carnelian",
+        "treasure_description": "Opaque <>",
+        "treasure_options": "orange,red-brown",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Chalcedony": {
+        "treasure_name": "Chalcedony",
+        "treasure_description": "Opaque white",
+        "treasure_options": "",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Chrysoprase": {
+        "treasure_name": "Chrysoprase",
+        "treasure_description": "Translucent green",
+        "treasure_options": "",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Citrine": {
+        "treasure_name": "Citrine",
+        "treasure_description": "Transparent pale yellow-brown",
+        "treasure_options": "",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Jasper": {
+        "treasure_name": "Jasper",
+        "treasure_description": "Opaque <>",
+        "treasure_options": "blue,black,brown",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Moonstone": {
+        "treasure_name": "Moonstone",
+        "treasure_description": "Translucent white with pale blue glow",
+        "treasure_options": "",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Onyx": {
+        "treasure_name": "Onyx",
+        "treasure_description": "Opaque <>",
+        "treasure_options": "bands of black and white,black,white",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Quartz": {
+        "treasure_name": "Quartz",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "white,smoky grey,yellow",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Sardonyx": {
+        "treasure_name": "Sardonyx",
+        "treasure_description": "Opaque bands of red and white",
+        "treasure_options": "",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Star rose quartz": {
+        "treasure_name": "Star rose quartz",
+        "treasure_description": "Translucent rosy stone with white star-shaped center",
+        "treasure_options": "",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Zircon": {
+        "treasure_name": "Zircon",
+        "treasure_description": "Transparent pale blue-green",
+        "treasure_options": "",
+        "value": "50",
+        "treasure_type": "gemstone"
+    },
+    "Amber": {
+        "treasure_name": "Amber",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "watery gold,gold,rich gold",
+        "value": "100",
+        "treasure_type": "gemstone"
+    },
+    "Amethyst": {
+        "treasure_name": "Amethyst",
+        "treasure_description": "Transparent deep purple",
+        "treasure_options": "",
+        "value": "100",
+        "treasure_type": "gemstone"
+    },
+    "Chrysoberyl": {
+        "treasure_name": "Chrysoberyl",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "yellow-green,pale green",
+        "value": "100",
+        "treasure_type": "gemstone"
+    },
+    "Coral": {
+        "treasure_name": "Coral",
+        "treasure_description": "Opaque crimson",
+        "treasure_options": "",
+        "value": "100",
+        "treasure_type": "gemstone"
+    },
+    "Garnet": {
+        "treasure_name": "Garnet",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "red,brown-green,violet",
+        "value": "100",
+        "treasure_type": "gemstone"
+    },
+    "Jade": {
+        "treasure_name": "Jade",
+        "treasure_description": "Translucent <>",
+        "treasure_options": "light green,deep green,white",
+        "value": "100",
+        "treasure_type": "gemstone"
+    },
+    "Jet": {
+        "treasure_name": "Jet",
+        "treasure_description": "Opaque deep black",
+        "treasure_options": "",
+        "value": "100",
+        "treasure_type": "gemstone"
+    },
+    "Pearl": {
+        "treasure_name": "Pearl",
+        "treasure_description": "Opaque lustrous <>",
+        "treasure_options": "white,yellow,pink",
+        "value": "100",
+        "treasure_type": "gemstone"
+    },
+    "Spinel": {
+        "treasure_name": "Spinel",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "red,red-brown,deep green",
+        "value": "100",
+        "treasure_type": "gemstone"
+    },
+    "Tourmaline": {
+        "treasure_name": "Tourmaline",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "pale green,blue,brown,red",
+        "value": "100",
+        "treasure_type": "gemstone"
+    },
+    "Alexandrite": {
+        "treasure_name": "Alexandrite",
+        "treasure_description": "Transparent dark green",
+        "treasure_options": "",
+        "value": "500",
+        "treasure_type": "gemstone"
+    },
+    "Aquamarine": {
+        "treasure_name": "Aquamarine",
+        "treasure_description": "Transparent pale blue-green",
+        "treasure_options": "",
+        "value": "500",
+        "treasure_type": "gemstone"
+    },
+    "Black pearl": {
+        "treasure_name": "Black pearl",
+        "treasure_description": "Opaque pure black",
+        "treasure_options": "",
+        "value": "500",
+        "treasure_type": "gemstone"
+    },
+    "Blue spinel": {
+        "treasure_name": "Blue spinel",
+        "treasure_description": "Transparent deep blue",
+        "treasure_options": "",
+        "value": "500",
+        "treasure_type": "gemstone"
+    },
+    "Peridot": {
+        "treasure_name": "Peridot",
+        "treasure_description": "Transparent rich olive green",
+        "treasure_options": "",
+        "value": "500",
+        "treasure_type": "gemstone"
+    },
+    "Topaz": {
+        "treasure_name": "Topaz",
+        "treasure_description": "Transparent golden yellow",
+        "treasure_options": "",
+        "value": "500",
+        "treasure_type": "gemstone"
+    },
+    "Black opal": {
+        "treasure_name": "Black opal",
+        "treasure_description": "Translucent dark green with black mottling and golden flecks",
+        "treasure_options": "",
+        "value": "1000",
+        "treasure_type": "gemstone"
+    },
+    "Blue sapphire": {
+        "treasure_name": "Blue sapphire",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "blue-white,medium blue",
+        "value": "1000",
+        "treasure_type": "gemstone"
+    },
+    "Emerald": {
+        "treasure_name": "Emerald",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "deep bright green",
+        "value": "1000",
+        "treasure_type": "gemstone"
+    },
+    "Fire opal": {
+        "treasure_name": "Fire opal",
+        "treasure_description": "Translucent fiery red",
+        "treasure_options": "",
+        "value": "1000",
+        "treasure_type": "gemstone"
+    },
+    "Opal": {
+        "treasure_name": "Opal",
+        "treasure_description": "Translucent pale blue with green and golden mottling",
+        "treasure_options": "",
+        "value": "1000",
+        "treasure_type": "gemstone"
+    },
+    "Star ruby": {
+        "treasure_name": "Star ruby",
+        "treasure_description": "Translucent ruby with white star-shaped center",
+        "treasure_options": "",
+        "value": "1000",
+        "treasure_type": "gemstone"
+    },
+    "Yellow sapphire": {
+        "treasure_name": "Yellow sapphire",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "fiery yellow,yellow-green",
+        "value": "1000",
+        "treasure_type": "gemstone"
+    },
+    "Black sapphire": {
+        "treasure_name": "Black sapphire",
+        "treasure_description": "translucent lustrous black with glowing highlights",
+        "treasure_options": "",
+        "value": "5000",
+        "treasure_type": "gemstone"
+    },
+    "Diamond": {
+        "treasure_name": "Diamond",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "blue-white,canary,pink,brown,blue",
+        "value": "5000",
+        "treasure_type": "gemstone"
+    },
+    "Jacinth": {
+        "treasure_name": "Jacinth",
+        "treasure_description": "Transparent fiery orange",
+        "treasure_options": "",
+        "value": "5000",
+        "treasure_type": "gemstone"
+    },
+    "Ruby": {
+        "treasure_name": "Ruby",
+        "treasure_description": "Transparent <>",
+        "treasure_options": "clear red,deep crimson",
+        "value": "5000",
+        "treasure_type": "gemstone"
+    },
+    "Ewer": {
+        "treasure_name": "Ewer",
+        "treasure_description": "Made of silver",
+        "treasure_options": "",
+        "value": "25",
+        "treasure_type": "art object"
+    },
+    "Statuette": {
+        "treasure_name": "Statuette",
+        "treasure_description": "Gold set with rubies",
+        "treasure_options": "",
+        "value": "7500",
+        "treasure_type": "art object"
+    },
+    "Small bracelet": {
+        "treasure_name": "Small bracelet",
+        "treasure_description": "Made of <> links",
+        "treasure_options": "silver,gold",
+        "value": "25",
+        "treasure_type": "art object"
+    },
+    "Vestments": {
+        "treasure_name": "Vestments",
+        "treasure_description": "Spun from cloth-of-gold",
+        "treasure_options": "",
+        "value": "25",
+        "treasure_type": "art object"
+    },
+    "Mask": {
+        "treasure_name": "Mask",
+        "treasure_description": "Black velvet and stitched with silver filigree",
+        "treasure_options": "",
+        "value": "25",
+        "treasure_type": "art object"
+    },
+    "Chalice": {
+        "treasure_name": "Chalice",
+        "treasure_description": "Silver set with moonstones",
+        "treasure_options": "",
+        "value": "750",
+        "treasure_type": "art object"
+    },
+    "Pair of dice": {
+        "treasure_name": "Pair of dice",
+        "treasure_description": "Engraved bone",
+        "treasure_options": "",
+        "value": "25",
+        "treasure_type": "art object"
+    },
+    "Small mirror set": {
+        "treasure_name": "Small mirror set",
+        "treasure_description": "Set in a painted wooden frame",
+        "treasure_options": "",
+        "value": "25",
+        "treasure_type": "art object"
+    },
+    "Handkerchief": {
+        "treasure_name": "Handkerchief",
+        "treasure_description": "Embroidered <> silk",
+        "treasure_options": "violet,blue,azure,red,yellow,green,orange",
+        "value": "25",
+        "treasure_type": "art object"
+    },
+    "Locket": {
+        "treasure_name": "Locket",
+        "treasure_description": "Gold with a painted portrait inside",
+        "treasure_options": "",
+        "value": "25",
+        "treasure_type": "art object"
+    },
+    "Ring": {
+        "treasure_name": "Ring",
+        "treasure_description": "Jeweled platinum",
+        "treasure_options": "",
+        "value": "7500",
+        "treasure_type": "art object"
+    },
+    "Large bracelet": {
+        "treasure_name": "Large bracelet",
+        "treasure_description": "Made from <> links",
+        "treasure_options": "gold,silver",
+        "value": "250",
+        "treasure_type": "art object"
+    },
+    "Necklace": {
+        "treasure_name": "Necklace",
+        "treasure_description": "String with small <> pearls",
+        "treasure_options": "white,yellow,pink",
+        "value": "2500",
+        "treasure_type": "art object"
+    },
+    "Crown": {
+        "treasure_name": "Crown",
+        "treasure_description": "Jeweled gold",
+        "treasure_options": "",
+        "value": "7500",
+        "treasure_type": "art object"
+    },
+    "Robe": {
+        "treasure_name": "Robe",
+        "treasure_description": "<> silk with gold embroidery",
+        "treasure_options": "violet,blue,azure,red,yellow,green,orange",
+        "value": "250",
+        "treasure_type": "art object"
+    },
+    "Large tapestry": {
+        "treasure_name": "Large tapestry",
+        "treasure_description": "Well-made and depicting a <>",
+        "treasure_options": "landscape,battle,starry sky,party,family tree,crest",
+        "value": "250",
+        "treasure_type": "art object"
+    },
+    "Mug": {
+        "treasure_name": "Mug",
+        "treasure_description": "Brass with jade inlay",
+        "treasure_options": "",
+        "value": "250",
+        "treasure_type": "art object"
+    },
+    "Animal figurines": {
+        "treasure_name": "Animal figurines",
+        "treasure_description": "Carved from solid jade",
+        "treasure_options": "",
+        "value": "250",
+        "treasure_type": "art object"
+    },
+    "Bird cage": {
+        "treasure_name": "Bird cage",
+        "treasure_description": "Gold with electrum filigree",
+        "treasure_options": "",
+        "value": "250",
+        "treasure_type": "art object"
+    },
+    "Steel Longsword": {
+        "treasure_name": "Steel Longsword",
+        "treasure_description": "Silver-plated with jet set in the hilt",
+        "treasure_options": "",
+        "value": "750",
+        "treasure_type": "art object"
+    },
+    "Harp": {
+        "treasure_name": "Harp",
+        "treasure_description": "Carved from exotic wood with ivory inlay and zircon gems",
+        "treasure_options": "",
+        "value": "750",
+        "treasure_type": "art object"
+    },
+    "Small idol": {
+        "treasure_name": "Small idol",
+        "treasure_description": "Cast gold",
+        "treasure_options": "",
+        "value": "750",
+        "treasure_type": "art object"
+    },
+    "Comb set": {
+        "treasure_name": "Comb set",
+        "treasure_description": "Gold dragon design with red garnets as eyes",
+        "treasure_options": "",
+        "value": "750",
+        "treasure_type": "art object"
+    },
+    "Bottle stopper": {
+        "treasure_name": "Bottle stopper",
+        "treasure_description": "Cork embossed with gold leaf and set with amethysts",
+        "treasure_options": "",
+        "value": "750",
+        "treasure_type": "art object"
+    },
+    "Ceremonial dagger": {
+        "treasure_name": "Ceremonial dagger",
+        "treasure_description": "Electrum with a black pearl in the pommel",
+        "treasure_options": "",
+        "value": "750",
+        "treasure_type": "art object"
+    },
+    "Brooch": {
+        "treasure_name": "Brooch",
+        "treasure_description": "Silver and gold",
+        "treasure_options": "",
+        "value": "750",
+        "treasure_type": "art object"
+    },
+    "War mask": {
+        "treasure_name": "War mask",
+        "treasure_description": "Painted gold",
+        "treasure_options": "",
+        "value": "750",
+        "treasure_type": "art object"
+    },
+    "Chain": {
+        "treasure_name": "Chain",
+        "treasure_description": "Fine gold set with fire opal",
+        "treasure_options": "",
+        "value": "2500",
+        "treasure_type": "art object"
+    },
+    "Painting": {
+        "treasure_name": "Painting",
+        "treasure_description": "An old masterpiece of a <>",
+        "treasure_options": "portrait,bowl of fruit,battle,landscape,ship",
+        "value": "2500",
+        "treasure_type": "art object"
+    },
+    "Mantle": {
+        "treasure_name": "Mantle",
+        "treasure_description": "Embroidered silk and velvet set with numerous moonstones",
+        "treasure_options": "",
+        "value": "2500",
+        "treasure_type": "art object"
+    },
+    "Bracelet set": {
+        "treasure_name": "Bracelet set",
+        "treasure_description": "Platinum set with a sapphire",
+        "treasure_options": "",
+        "value": "2500",
+        "treasure_type": "art object"
+    },
+    "Glove set": {
+        "treasure_name": "Glove set",
+        "treasure_description": "Embroidered leather with jewel chips",
+        "treasure_options": "",
+        "value": "2500",
+        "treasure_type": "art object"
+    },
+    "Anklet": {
+        "treasure_name": "Anklet",
+        "treasure_description": "<> set with gemstones",
+        "treasure_options": "gold,silver",
+        "value": "2500",
+        "treasure_type": "art object"
+    },
+    "Music box": {
+        "treasure_name": "Music box",
+        "treasure_description": "Gold with silver mechanisms",
+        "treasure_options": "",
+        "value": "2500",
+        "treasure_type": "art object"
+    },
+    "Circlet": {
+        "treasure_name": "Circlet",
+        "treasure_description": "Gold set with four aquamarines",
+        "treasure_options": "",
+        "value": "2500",
+        "treasure_type": "art object"
+    },
+    "Eye patch": {
+        "treasure_name": "Eye patch",
+        "treasure_description": "Leather with a mock eye set in <> and moonstone",
+        "treasure_options": "blue sapphire,emerald,fire opal,yellow sapphire",
+        "value": "2500",
+        "treasure_type": "art object"
+    },
+    "Cup": {
+        "treasure_name": "Cup",
+        "treasure_description": "Gold set with emeralds",
+        "treasure_options": "",
+        "value": "7500",
+        "treasure_type": "art object"
+    },
+    "Jewelry box": {
+        "treasure_name": "Jewelry box",
+        "treasure_description": "Gold with platinum filigree",
+        "treasure_options": "",
+        "value": "7500",
+        "treasure_type": "art object"
+    },
+    "Child's sarcophogas": {
+        "treasure_name": "Child's sarcophogas",
+        "treasure_description": "Painted gold",
+        "treasure_options": "",
+        "value": "7500",
+        "treasure_type": "art object"
+    },
+    "Game board": {
+        "treasure_name": "Game board",
+        "treasure_description": "Jade with solid gold playing pieces",
+        "treasure_options": "",
+        "value": "7500",
+        "treasure_type": "art object"
+    },
+    "Drinking horn": {
+        "treasure_name": "Drinking horn",
+        "treasure_description": "Bejeweled ivory with gold filigree",
+        "treasure_options": "",
+        "value": "7500",
+        "treasure_type": "art object"
+    },
+    "Star sapphire": {
+        "treasure_name": "Star sapphire",
+        "treasure_description": "Translucent blue with white star-shaped center",
+        "treasure_options": "",
+        "value": "1000",
+        "treasure_type": "gemstone"
+    }
+}

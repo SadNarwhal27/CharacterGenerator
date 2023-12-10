@@ -1,0 +1,98 @@
+{
+    "Baker": {
+        "occupation_name": "Baker",
+        "skills": "Perception, Survival"
+    },
+    "Blacksmith": {
+        "occupation_name": "Blacksmith",
+        "skills": "Athletics, History"
+    },
+    "Carpenter": {
+        "occupation_name": "Carpenter",
+        "skills": "Perception, Survival"
+    },
+    "Farmer": {
+        "occupation_name": "Farmer",
+        "skills": "Animal Handling"
+    },
+    "Fisherman": {
+        "occupation_name": "Fisherman",
+        "skills": "Nature, Sleight of Hand"
+    },
+    "Herbalist": {
+        "occupation_name": "Herbalist",
+        "skills": "Medicine"
+    },
+    "Innkeeper": {
+        "occupation_name": "Innkeeper",
+        "skills": "Persuasion, Insight"
+    },
+    "Merchant": {
+        "occupation_name": "Merchant",
+        "skills": "Persuasion, Insight"
+    },
+    "Miller": {
+        "occupation_name": "Miller",
+        "skills": "Athletics"
+    },
+    "Miner": {
+        "occupation_name": "Miner",
+        "skills": "Athletics, Perception"
+    },
+    "Potter": {
+        "occupation_name": "Potter",
+        "skills": "Sleight of Hand"
+    },
+    "Seamstress": {
+        "occupation_name": "Seamstress",
+        "skills": "Sleight of Hand"
+    },
+    "Shepherd": {
+        "occupation_name": "Shepherd",
+        "skills": "Animal Handling, Survival"
+    },
+    "Tailor": {
+        "occupation_name": "Tailor",
+        "skills": "Sleight of Hand, Investigation"
+    },
+    "Tanner": {
+        "occupation_name": "Tanner",
+        "skills": "Survival"
+    },
+    "Weaver": {
+        "occupation_name": "Weaver",
+        "skills": "Sleight of Hand, Perception"
+    },
+    "Woodcutter": {
+        "occupation_name": "Woodcutter",
+        "skills": "Athletics, Nature"
+    },
+    "Noble": {
+        "occupation_name": "Noble",
+        "skills": "Performance, Deception"
+    },
+    "Scholar": {
+        "occupation_name": "Scholar",
+        "skills": "Arcana, Investigation"
+    },
+    "Soldier": {
+        "occupation_name": "Soldier",
+        "skills": "Athletics"
+    },
+    "Thief": {
+        "occupation_name": "Thief",
+        "skills": "Acrobatics, Sleight of Hand, Stealth"
+    },
+    "Bounty Hunter": {
+        "occupation_name": "Bounty Hunter",
+        "skills": "Intimidation"
+    },
+    "Hunter": {
+        "occupation_name": "Hunter",
+        "skills": "Survival"
+    },
+    "Actor": {
+        "occupation_name": "Actor",
+        "skills": "Deception, Performance"
+    }
+}

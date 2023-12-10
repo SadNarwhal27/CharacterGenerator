@@ -91,9 +91,9 @@ class CardAssistant():
     
     def choose_weapon(self, modifiers:dict):
         """Chooses a weapon and splits up the data into a usable form"""
-        weapon = self.grabber.get_data('weapons')
+        weapon = self.grabber.get_line('weapons')
 
-        if 'Melee' in weapon['type']:
+        if 'Melee' in weapon['weapon_type']:
             bonus = modifiers['STR_MOD']
         else:
             bonus = modifiers['DEX_MOD']
@@ -106,7 +106,7 @@ class CardAssistant():
         if bonus != 0:
             if bonus > 0:
                 bonus = f'+{bonus}'
-            weapon['damage'] += f' {bonus}'
+            weapon['weapon_damage'] += f' {bonus}'
 
         action = {weapon.pop('weapon_name'): weapon}
         return {'actions': action}
@@ -161,7 +161,7 @@ class CardAssistant():
 
         if 'gender' in data_filters.keys():
             try:
-                if not self.grabber.get_data('character_first_names', {'gender':data_filters['gender']}):
+                if not self.grabber.get_data('first_names', {'gender':data_filters['gender']}):
                     data_filters.pop('gender')
             except:
                 data_filters.pop('gender')
